@@ -6,22 +6,36 @@ import 'package:flutter_practise/counter.dart';
 import 'package:flutter_practise/list-basic.dart';
 import 'package:flutter_practise/list-advanced.dart';
 
+/*Widget Of Week*/
+import 'package:flutter_practise/widget_of_week/main.dart';
+
 /*Rocket_guide App*/
 import 'package:flutter_practise/rocket_guide/app/app.dart';
 import 'package:flutter_practise/rocket_guide/backend/backend.dart';
 
+class Display extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final backend = Backend('https://api.spacexdata.com/v4');
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/rocket': (context) => RocketGuideApp(
+          backend: backend,
+        ),
+        '/hello': (context) => HelloFlutter(),
+        '/counter': (context) => Counter(),
+        '/list-basic': (context) => ListBasic(),
+        '/list-advanced': (context) => ListAdvanced(),
+        '/widgetOfWeek': (context) => WidgetOfWeek(),
+        '/': (context) => WidgetOfWeek(),
+      },
+    );
+  }
+}
+
 
 void main() {
-  final backend = Backend('https://api.spacexdata.com/v4');
-
-  runApp(
-    //runApp(HelloFlutter());
-    //runApp(Counter());
-    //runApp(ListBasic());
-    //runApp(ListAdvanced());
-    RocketGuideApp(
-      backend: backend,
-    ),
-  );
+  runApp(Display());
 }
 

@@ -1,16 +1,17 @@
 # flutter_practise
 
-A new Flutter project which includes practise files from beginning. #30DaysOfFlutter
+#30DaysOfFlutter - A new Flutter project which includes practise files from beginning.
 
-## 1 Hello World
-## 2 Increment Counter
-## 3 Basic Lazy Loaded List
-## 4 Advanced List with Save Favorite
+### 1. Hello World
+### 2. Increment Counter
+### 3. Basic Lazy Loaded List
+### 4. Advanced List with Save Favorite
 
+<br/>
 
-## 5 Rocket_guide - A dummy featured app
+### 5. Rocket_guide - A dummy featured app
 
-### An easy to use index of all SpaceX rockets.
+#### An easy to use index of all SpaceX rockets.
 Find out more here: http://goo.gle/30daysofflutter
 
 ## API
