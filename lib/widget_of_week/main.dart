@@ -10,6 +10,7 @@ import 'package:flutter_practise/widget_of_week/6-future-builder.dart';
 import 'package:flutter_practise/widget_of_week/7-fade-transition.dart';
 import 'package:flutter_practise/widget_of_week/8-floating-action-button.dart';
 import 'package:flutter_practise/widget_of_week/9-page-view.dart';
+import 'package:flutter_practise/widget_of_week/10-table.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -26,8 +27,9 @@ class WidgetOfWeek extends StatelessWidget {
       Widget7(), //FadeTransition
       Widget8(), //FloatingActionButton
       Widget9(), //PageView
+      Widget10(), //Table
     ];
     return widgets[_random.nextInt(widgets.length)];
-    //return Widget9();
+    //return Widget10();
   }
 }
