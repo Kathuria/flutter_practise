@@ -6,8 +6,8 @@
 ### 2. Increment Counter
 ### 3. Basic Lazy Loaded List
 ### 4. Advanced List with Save Favorite
-
-<br/>
+### 5. Widget Of the Week
+Find out more here: https://www.youtube.com/watch?v=b_sQ9bMltGU&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=1
 
 ### 5. Rocket_guide - A dummy featured app
 
