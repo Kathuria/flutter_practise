@@ -21,14 +21,11 @@ class Widget9 extends StatelessWidget {
         MyPage3Widget(),
       ],
     );
-    return MaterialApp(
-      title: 'Flutter Widgets',
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: const Text('#Widget 9 : Page View'),
         ),
         body: pageView
-      ),
     );
   }
 

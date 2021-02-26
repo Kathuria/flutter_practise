@@ -12,34 +12,31 @@ class _Widget5aState extends State<Widget5a> {
   var _opacity = 0.8;
 
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Widgets',
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('#Widget 6 : Animated Opacity'),
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('#Widget 6 : Animated Opacity'),
+        ),
+        body: Center(
+          child: Stack(
+            children: [
+              const FlutterLogo(
+                size: 300,
+              ),
+              AnimatedOpacity(
+                duration: const Duration(seconds: 1),
+                opacity: _opacity,
+                child: _buildGradientContainer(),
+              ),
+            ],
           ),
-          body: Center(
-            child: Stack(
-              children: [
-                const FlutterLogo(
-                  size: 300,
-                ),
-                AnimatedOpacity(
-                  duration: const Duration(seconds: 1),
-                  opacity: _opacity,
-                  child: _buildGradientContainer(),
-                ),
-              ],
-            ),
-          ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {
-              setState(() {
-                _opacity = _opacity == 0 ? 0.8 : 0;
-              });
-            },
-            child: Icon(Icons.sync),
-          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            setState(() {
+              _opacity = _opacity == 0 ? 0.8 : 0;
+            });
+          },
+          child: Icon(Icons.sync),
         ));
   }
 

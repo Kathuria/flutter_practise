@@ -7,35 +7,32 @@ import 'package:flutter_practise/widget_of_week/10x-containers.dart';
 class Widget10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Widgets',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('#Widget 10 : Table'),
-        ),
-        body: Table(
-          border: TableBorder.all(),
-          //defaultColumnWidth: FixedColumnWidth(100),
-          defaultColumnWidth: FractionColumnWidth(.25),
-          //defaultColumnWidth: FlexColumnWidth(1),
-          //defaultColumnWidth: IntrinsicColumnWidth(),
-          columnWidths: {1: FractionColumnWidth(.5)},
-          //defaultVerticalAlignment: TableCellVerticalAlignment.bottom,
-          defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-          //defaultVerticalAlignment: TableCellVerticalAlignment.top,
-          children: [
-            TableRow(children: [
-              wideWidget(),
-              mediumWidget(),
-              mediumWidget(),
-            ]),
-            TableRow(children: [
-              mediumWidget(),
-              narrowWidget(),
-              mediumWidget(),
-            ]),
-          ],
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('#Widget 10 : Table'),
+      ),
+      body: Table(
+        border: TableBorder.all(),
+        //defaultColumnWidth: FixedColumnWidth(100),
+        defaultColumnWidth: FractionColumnWidth(.25),
+        //defaultColumnWidth: FlexColumnWidth(1),
+        //defaultColumnWidth: IntrinsicColumnWidth(),
+        columnWidths: {1: FractionColumnWidth(.5)},
+        //defaultVerticalAlignment: TableCellVerticalAlignment.bottom,
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        //defaultVerticalAlignment: TableCellVerticalAlignment.top,
+        children: [
+          TableRow(children: [
+            wideWidget(),
+            mediumWidget(),
+            mediumWidget(),
+          ]),
+          TableRow(children: [
+            mediumWidget(),
+            narrowWidget(),
+            mediumWidget(),
+          ]),
+        ],
       ),
     );
   }

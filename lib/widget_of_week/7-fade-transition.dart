@@ -52,16 +52,14 @@ class _MyFadeInState extends State<MyFadeIn>
   @override
   Widget build(BuildContext context) {
     _controller.forward();
-    return MaterialApp(
-        title: 'Flutter Widgets',
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('#Widget 7 : Fade Transition'),
-          ),
-          body: FadeTransition(
-            opacity: _animation,
-            child: widget.child,
-          ),
-        ));
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('#Widget 7 : Fade Transition'),
+      ),
+      body: FadeTransition(
+        opacity: _animation,
+        child: widget.child,
+      ),
+    );
   }
 }

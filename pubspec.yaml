@@ -43,6 +43,9 @@ dependencies:
   # Used for opening the native browser.
   url_launcher: ^5.7.10
 
+  # Used for transparent image in 13d
+  transparent_image: ^1.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

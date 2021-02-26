@@ -6,16 +6,13 @@ import 'package:flutter/material.dart';
 class Widget1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Widgets',
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text('#Widget 1 : SafeArea'),
-          ),
-          body: SafeArea(
-              child: ListView(
-                  children:
-                      List.generate(100, (i) => Text('This is some text'))))),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('#Widget 1 : SafeArea'),
+      ),
+      body: SafeArea(
+          child: ListView(
+              children: List.generate(100, (i) => Text('This is some text')))),
     );
   }
 }

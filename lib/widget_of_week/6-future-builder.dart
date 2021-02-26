@@ -8,30 +8,27 @@ import 'package:http/http.dart' as http;
 class Widget6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Widgets',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('#Widget 6 : Future Builder'),
-        ),
-        body: FutureBuilder<String>(
-          future: _getPostTitle(1),
-          builder: (context, snapshot) {
-            switch (snapshot.connectionState) {
-              case ConnectionState.none:
-                return const Text('Press button to start.');
-              case ConnectionState.active:
-              case ConnectionState.waiting:
-                return const Text('Awaiting result...');
-              case ConnectionState.done:
-                if (snapshot.hasError) {
-                  return Text('Error: ${snapshot.error}');
-                }
-                return Text('Result: ${snapshot.data}');
-            }
-            return null; // unreachable
-          },
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('#Widget 6 : Future Builder'),
+      ),
+      body: FutureBuilder<String>(
+        future: _getPostTitle(1),
+        builder: (context, snapshot) {
+          switch (snapshot.connectionState) {
+            case ConnectionState.none:
+              return const Text('Press button to start.');
+            case ConnectionState.active:
+            case ConnectionState.waiting:
+              return const Text('Awaiting result...');
+            case ConnectionState.done:
+              if (snapshot.hasError) {
+                return Text('Error: ${snapshot.error}');
+              }
+              return Text('Result: ${snapshot.data}');
+          }
+          return null; // unreachable
+        },
       ),
     );
   }
@@ -45,4 +42,3 @@ class Widget6 extends StatelessWidget {
     return data['title'].toString();
   }
 }
-

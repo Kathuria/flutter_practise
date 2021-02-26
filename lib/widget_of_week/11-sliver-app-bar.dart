@@ -7,46 +7,43 @@ class Widget11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const _expandedImage = FlutterLogo();
-    return MaterialApp(
-      title: 'Flutter Widgets',
-      home: Scaffold(
-        body: CustomScrollView(
-          slivers: <Widget>[
-            const SliverAppBar(
-              title: Text('#Widget 11 : Sliver App Bar'),
-              snap: true,
-              // The property snap can only be set to true,
-              // if floating is also true.
-              floating: true,
-              pinned: true,
-              expandedHeight: 200,
-              stretch: true,
-              flexibleSpace: FlexibleSpaceBar(
-                //title: Text('Flexible Spaces'),
-                background: _expandedImage,
-                stretchModes: <StretchMode>[
-                  StretchMode.zoomBackground,
-                  StretchMode.blurBackground,
-                  StretchMode.fadeTitle,
-                ],
-              ),
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: <Widget>[
+          const SliverAppBar(
+            title: Text('#Widget 11 : Sliver App Bar'),
+            snap: true,
+            // The property snap can only be set to true,
+            // if floating is also true.
+            floating: true,
+            pinned: true,
+            expandedHeight: 200,
+            stretch: true,
+            flexibleSpace: FlexibleSpaceBar(
+              //title: Text('Flexible Spaces'),
+              background: _expandedImage,
+              stretchModes: <StretchMode>[
+                StretchMode.zoomBackground,
+                StretchMode.blurBackground,
+                StretchMode.fadeTitle,
+              ],
             ),
-            SliverList(
-              delegate: SliverChildListDelegate(
-                [
-                  for (var i = 0; i < 6; i++)
-                    Container(
-                      height: 150,
-                      color: i.isEven ? Colors.white : Colors.grey[300],
-                      child: Center(
-                        child: Text('$i', style: const TextStyle(fontSize: 50)),
-                      ),
+          ),
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                for (var i = 0; i < 6; i++)
+                  Container(
+                    height: 150,
+                    color: i.isEven ? Colors.white : Colors.grey[300],
+                    child: Center(
+                      child: Text('$i', style: const TextStyle(fontSize: 50)),
                     ),
-                ],
-              ),
+                  ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

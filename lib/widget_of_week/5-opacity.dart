@@ -15,17 +15,14 @@ class Widget5 extends StatelessWidget {
       _buildMyWidget(Colors.yellow),
     ];
 
-    return MaterialApp(
-        title: 'Flutter Widgets',
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('#Widget 5 : Opacity'),
-          ),
-          body: Center(
-            child: Column(
-              children: widgets,
-              mainAxisAlignment: MainAxisAlignment.center,
-            ),
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('#Widget 5 : Opacity'),
+        ),
+        body: Center(
+          child: Column(
+            children: widgets,
+            mainAxisAlignment: MainAxisAlignment.center,
           ),
         ));
   }

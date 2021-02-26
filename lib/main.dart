@@ -18,6 +18,7 @@ class Display extends StatelessWidget {
   Widget build(BuildContext context) {
     final backend = Backend('https://api.spacexdata.com/v4');
     return MaterialApp(
+      title: 'Flutter Practise',
       initialRoute: '/',
       routes: {
         '/rocket': (context) => RocketGuideApp(
