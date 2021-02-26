@@ -25,6 +25,10 @@ import 'package:flutter_practise/widget_of_week/19-tooltip.dart';
 import 'package:flutter_practise/widget_of_week/20-fitted-box.dart';
 import 'package:flutter_practise/widget_of_week/21-layout-builder.dart';
 import 'package:flutter_practise/widget_of_week/22-absorb-pointer.dart';
+import 'package:flutter_practise/widget_of_week/23-transform.dart';
+import 'package:flutter_practise/widget_of_week/24-backdrop-filter.dart';
+import 'package:flutter_practise/widget_of_week/24a-backdrop-filter-positioned.dart';
+import 'package:flutter_practise/widget_of_week/25-align.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -61,6 +65,10 @@ class WidgetOfWeek extends StatelessWidget {
         '/fitted-box': (context) => Widget20(),
         '/layout-builder': (context) => Widget21(),
         '/absorb-pointer': (context) => Widget22(),
+        '/transform': (context) => Widget23(),
+        '/backdrop-filter': (context) => Widget24(),
+        '/backdrop-filter-positioned': (context) => Widget24a(),
+        '/align': (context) => Widget25(),
       },
     );
   }
@@ -102,6 +110,9 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'fitted-box', '/fitted-box'),
             _buildList(context, 'layout-builder', '/layout-builder'),
             _buildList(context, 'absorb-pointer', '/absorb-pointer'),
+            _buildList(context, 'backdrop-filter', '/backdrop-filter'),
+            _buildList(context, 'backdrop-filter-positioned', '/backdrop-filter-positioned'),
+            _buildList(context, 'align', '/align'),
           ],
         ),
       ),

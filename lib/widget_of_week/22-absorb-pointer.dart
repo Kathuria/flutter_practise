@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 //AbsorbPointer
 //https://www.youtube.com/watch?v=65HoWqBboI8&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=23&ab_channel=GoogleDevelopers
 
-import 'package:flutter/material.dart';
-
 class Widget22 extends StatefulWidget {
   @override
   _Widget22State createState() => _Widget22State();
