@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 import 'package:flutter_practise/widget_of_week/1-safearea.dart';
 import 'package:flutter_practise/widget_of_week/2-expanded.dart';
 import 'package:flutter_practise/widget_of_week/3-wrap.dart';
@@ -16,6 +15,16 @@ import 'package:flutter_practise/widget_of_week/12-sliver-grid-count.dart';
 import 'package:flutter_practise/widget_of_week/12a-sliver-grid-extent.dart';
 import 'package:flutter_practise/widget_of_week/12b-sliver-list-delegate.dart';
 import 'package:flutter_practise/widget_of_week/13-fade-in-image.dart';
+import 'package:flutter_practise/widget_of_week/14-stream-builder-websocket.dart';
+import 'package:flutter_practise/widget_of_week/14a-stream-builder-http-resp.dart';
+import 'package:flutter_practise/widget_of_week/15-inherited-model.dart';
+import 'package:flutter_practise/widget_of_week/16-clip-r-rect.dart';
+import 'package:flutter_practise/widget_of_week/17-hero.dart';
+import 'package:flutter_practise/widget_of_week/18-custom-paint.dart';
+import 'package:flutter_practise/widget_of_week/19-tooltip.dart';
+import 'package:flutter_practise/widget_of_week/20-fitted-box.dart';
+import 'package:flutter_practise/widget_of_week/21-layout-builder.dart';
+import 'package:flutter_practise/widget_of_week/22-absorb-pointer.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -41,6 +50,17 @@ class WidgetOfWeek extends StatelessWidget {
         '/sliver-grid-extent': (context) => Widget12a(),
         '/sliver-list-delegate': (context) => Widget12b(),
         '/fade-in-image': (context) => Widget13(),
+        '/stream-builder-web-socket': (context) => Widget14(),
+        '/stream-builder-http-response': (context) => Widget14a(),
+        '/inherited-model': (context) => Widget15(),
+        '/clip-r-react': (context) => Widget16(),
+        '/hero': (context) => Widget17(),
+        '/hero_detail': (context) => HeroDetailPage(),
+        '/custom-paint': (context) => Widget18(),
+        '/tooltip': (context) => Widget19(),
+        '/fitted-box': (context) => Widget20(),
+        '/layout-builder': (context) => Widget21(),
+        '/absorb-pointer': (context) => Widget22(),
       },
     );
   }
@@ -72,6 +92,16 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'sliver-grid-extent', '/sliver-grid-extent'),
             _buildList(context, 'sliver-list-delegate', '/sliver-list-delegate'),
             _buildList(context, 'fade-in-image', '/fade-in-image'),
+            _buildList(context, 'stream-builder-web-socket', '/stream-builder-web-socket'),
+            _buildList(context, 'stream-builder-http-response', '/stream-builder-http-response'),
+            _buildList(context, 'inherited-model', '/inherited-model'),
+            _buildList(context, 'clip-r-react', '/clip-r-react'),
+            _buildList(context, 'hero', '/hero'),
+            _buildList(context, 'custom-paint', '/custom-paint'),
+            _buildList(context, 'tooltip', '/tooltip'),
+            _buildList(context, 'fitted-box', '/fitted-box'),
+            _buildList(context, 'layout-builder', '/layout-builder'),
+            _buildList(context, 'absorb-pointer', '/absorb-pointer'),
           ],
         ),
       ),
