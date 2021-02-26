@@ -29,6 +29,14 @@ import 'package:flutter_practise/widget_of_week/23-transform.dart';
 import 'package:flutter_practise/widget_of_week/24-backdrop-filter.dart';
 import 'package:flutter_practise/widget_of_week/24a-backdrop-filter-positioned.dart';
 import 'package:flutter_practise/widget_of_week/25-align.dart';
+import 'package:flutter_practise/widget_of_week/26-positioned.dart';
+import 'package:flutter_practise/widget_of_week/27-animated-builder.dart';
+import 'package:flutter_practise/widget_of_week/28-dismissible.dart';
+import 'package:flutter_practise/widget_of_week/28a-dismissible-twin-color.dart';
+import 'package:flutter_practise/widget_of_week/29-sized-box.dart';
+import 'package:flutter_practise/widget_of_week/29a-sized-box-infinity.dart';
+import 'package:flutter_practise/widget_of_week/29b-sized-box-empty.dart';
+import 'package:flutter_practise/widget_of_week/30-value-listenable-builder.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -69,6 +77,14 @@ class WidgetOfWeek extends StatelessWidget {
         '/backdrop-filter': (context) => Widget24(),
         '/backdrop-filter-positioned': (context) => Widget24a(),
         '/align': (context) => Widget25(),
+        '/positioned': (context) => Widget26(),
+        '/animated-builder': (context) => Widget27(),
+        '/dismissible': (context) => Widget28(),
+        '/dismissible-twin-colors': (context) => Widget28a(),
+        '/sized-box': (context) => Widget29(),
+        '/sized-box-infinity': (context) => Widget29a(),
+        '/sized-box-empty': (context) => Widget29b(),
+        '/value-listenable-builder': (context) => Widget30(),
       },
     );
   }
@@ -113,6 +129,14 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'backdrop-filter', '/backdrop-filter'),
             _buildList(context, 'backdrop-filter-positioned', '/backdrop-filter-positioned'),
             _buildList(context, 'align', '/align'),
+            _buildList(context, 'positioned', '/positioned'),
+            _buildList(context, 'animated-builder', '/animated-builder'),
+            _buildList(context, 'dismissible', '/dismissible'),
+            _buildList(context, 'dismissible-twin-colors', '/dismissible-twin-colors'),
+            _buildList(context, 'sized-box', '/sized-box'),
+            _buildList(context, 'sized-box-infinity', '/sized-box-infinity'),
+            _buildList(context, 'sized-box-empty', '/sized-box-empty'),
+            _buildList(context, 'value-listenable-builder', '/value-listenable-builder'),
           ],
         ),
       ),
