@@ -50,6 +50,18 @@ import 'package:flutter_practise/widget_of_week/37-animated-icon.dart';
 import 'package:flutter_practise/widget_of_week/38-aspect-ratio.dart';
 import 'package:flutter_practise/widget_of_week/39-limited-box.dart';
 import 'package:flutter_practise/widget_of_week/40-placeholder.dart';
+import 'package:flutter_practise/widget_of_week/41-rich-text.dart';
+import 'package:flutter_practise/widget_of_week/42-reorderable-list-view.dart';
+import 'package:flutter_practise/widget_of_week/43-animated-switcher.dart';
+import 'package:flutter_practise/widget_of_week/44-animated-position.dart';
+import 'package:flutter_practise/widget_of_week/45-animated-padding.dart';
+import 'package:flutter_practise/widget_of_week/46-indexed-stack.dart';
+import 'package:flutter_practise/widget_of_week/47-semantics.dart';
+import 'package:flutter_practise/widget_of_week/48-constrained-box.dart';
+import 'package:flutter_practise/widget_of_week/49-stack.dart';
+import 'package:flutter_practise/widget_of_week/50-animated-opacity.dart';
+import 'package:flutter_practise/widget_of_week/51-fractionally-sized-box.dart';
+import 'package:flutter_practise/widget_of_week/52-list-view.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -111,6 +123,18 @@ class WidgetOfWeek extends StatelessWidget {
         '/aspect-ratio': (context) => Widget38(),
         '/limited-box': (context) => Widget39(),
         '/placeholder': (context) => Widget40(),
+        '/rich-text': (context) => Widget41(),
+        '/reorderable-list-view': (context) => Widget42(),
+        '/animated-switcher': (context) => Widget43(),
+        '/animated-position': (context) => Widget44(),
+        '/animated-padding': (context) => Widget45(),
+        '/indexed-stack': (context) => Widget46(),
+        '/semantics': (context) => Widget47(),
+        '/constrained-box': (context) => Widget48(),
+        '/stack': (context) => Widget49(),
+        '/animated-opacity': (context) => Widget50(),
+        '/fractionally-sized-box': (context) => Widget51(),
+        '/list-view': (context) => Widget52(),
       },
     );
   }
@@ -177,6 +201,18 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'aspect-ratio', '/aspect-ratio'),
             _buildList(context, 'limited-box', '/limited-box'),
             _buildList(context, 'placeholder', '/placeholder'),
+            _buildList(context, 'rich-text', '/rich-text'),
+            _buildList(context, 'reorderable-list-view', '/reorderable-list-view'),
+            _buildList(context, 'animated-switcher', '/animated-switcher'),
+            _buildList(context, 'animated-position', '/animated-position'),
+            _buildList(context, 'animated-padding', '/animated-padding'),
+            _buildList(context, 'indexed-stack', '/indexed-stack'),
+            _buildList(context, 'semantics', '/semantics'),
+            _buildList(context, 'constrained-box', '/constrained-box'),
+            _buildList(context, 'stack', '/stack'),
+            _buildList(context, 'animated-opacity', '/animated-opacity'),
+            _buildList(context, 'fractionally-sized-box', '/fractionally-sized-box'),
+            _buildList(context, 'list-view', '/list-view'),
           ],
         ),
       ),
