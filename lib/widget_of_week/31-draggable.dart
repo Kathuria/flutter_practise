@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Widget31 extends StatefulWidget {
-  @override
-  _Widget31State createState() => _Widget31State();
-}
+//Draggable
+//https://www.youtube.com/watch?v=QzA4c4QHZCY&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=32&ab_channel=Flutter
 
-class _Widget31State extends State<Widget31> {
-
+class Widget31 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,67 +41,67 @@ class _Widget31State extends State<Widget31> {
 }
 
 Widget createDraggable(MaterialColor color, String data) => Draggable(
-  child: Container(
-    height: 100,
-    width: 100,
-    color: color,
-    child: Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Center(
-        child: Text(
-          "Drag me to my color name",
-          style: TextStyle(color: Colors.white),
-          textAlign: TextAlign.center,
-        ),
-      ),
-    ),
-  ),
-  feedback: Container(
-    height: 100,
-    width: 100,
-    color: color,
-    child: Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Center(
-        /// Reason for adding Material widget here is that the
-        /// text widget needs material theme otherwise it'll show
-        /// two yellow lines beneath itself. We have scaffold in the
-        /// widget tree but when the "feedback" widget is floating then
-        /// it disconnects with the Scaffold.
-        /// Check related issue here : https://github.com/flutter/flutter/issues/30647
-        child: Material(
-          type: MaterialType.transparency,
-          child: Text(
-            "I am being dragged",
-            style: TextStyle(color: Colors.white),
-            textAlign: TextAlign.center,
+      child: Container(
+        height: 100,
+        width: 100,
+        color: color,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              "Drag me to my color name",
+              style: TextStyle(color: Colors.white),
+              textAlign: TextAlign.center,
+            ),
           ),
         ),
       ),
-    ),
-  ),
-  childWhenDragging: Container(
-    height: 100,
-    width: 100,
-    color: Colors.grey,
-    child: Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Center(
-        child: Text(
-          "Original place",
-          style: TextStyle(color: Colors.black),
-          textAlign: TextAlign.center,
+      feedback: Container(
+        height: 100,
+        width: 100,
+        color: color,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            /// Reason for adding Material widget here is that the
+            /// text widget needs material theme otherwise it'll show
+            /// two yellow lines beneath itself. We have scaffold in the
+            /// widget tree but when the "feedback" widget is floating then
+            /// it disconnects with the Scaffold.
+            /// Check related issue here : https://github.com/flutter/flutter/issues/30647
+            child: Material(
+              type: MaterialType.transparency,
+              child: Text(
+                "I am being dragged",
+                style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
         ),
       ),
-    ),
-  ),
-  data: data,
-  onDragStarted: () => print("Drag Started"),
-  onDragCompleted: () => print("Drag Completed"),
-);
+      childWhenDragging: Container(
+        height: 100,
+        width: 100,
+        color: Colors.grey,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Text(
+              "Original place",
+              style: TextStyle(color: Colors.black),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+      ),
+      data: data,
+      onDragStarted: () => print("Drag Started"),
+      onDragCompleted: () => print("Drag Completed"),
+    );
 
 Widget createDragTarget(
-    BuildContext context, MaterialColor color, String dataOfDragged) =>
+        BuildContext context, MaterialColor color, String dataOfDragged) =>
     DragTarget(
       builder: (context, List<String> candidateData, rejectedData) {
         return Container(

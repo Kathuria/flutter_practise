@@ -14,9 +14,7 @@ class _Widget28State extends State<Widget28> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('#Widget 28 : Dismissible')
-      ),
+      appBar: AppBar(title: Text('#Widget 28 : Dismissible')),
       body: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {

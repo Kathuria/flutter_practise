@@ -41,6 +41,15 @@ import 'package:flutter_practise/widget_of_week/29a-sized-box-infinity.dart';
 import 'package:flutter_practise/widget_of_week/29b-sized-box-empty.dart';
 import 'package:flutter_practise/widget_of_week/30-value-listenable-builder.dart';
 import 'package:flutter_practise/widget_of_week/31-draggable.dart';
+import 'package:flutter_practise/widget_of_week/32-animated-list.dart';
+import 'package:flutter_practise/widget_of_week/33-flexible.dart';
+import 'package:flutter_practise/widget_of_week/34-media-query.dart';
+import 'package:flutter_practise/widget_of_week/35-spacer.dart';
+import 'package:flutter_practise/widget_of_week/36-inherited-widget.dart';
+import 'package:flutter_practise/widget_of_week/37-animated-icon.dart';
+import 'package:flutter_practise/widget_of_week/38-aspect-ratio.dart';
+import 'package:flutter_practise/widget_of_week/39-limited-box.dart';
+import 'package:flutter_practise/widget_of_week/40-placeholder.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -93,6 +102,15 @@ class WidgetOfWeek extends StatelessWidget {
         '/sized-box-empty': (context) => Widget29b(),
         '/value-listenable-builder': (context) => Widget30(),
         '/draggable': (context) => Widget31(),
+        '/animated-list': (context) => Widget32(),
+        '/flexible': (context) => Widget33(),
+        '/media-query': (context) => Widget34(),
+        '/spacer': (context) => Widget35(),
+        '/inherited-widget': (context) => Widget36(),
+        '/animated-icon': (context) => Widget37(),
+        '/aspect-ratio': (context) => Widget38(),
+        '/limited-box': (context) => Widget39(),
+        '/placeholder': (context) => Widget40(),
       },
     );
   }
@@ -150,6 +168,15 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'sized-box-empty', '/sized-box-empty'),
             _buildList(context, 'value-listenable-builder', '/value-listenable-builder'),
             _buildList(context, 'draggable', '/draggable'),
+            _buildList(context, 'animated-list', '/animated-list'),
+            _buildList(context, 'flexible', '/flexible'),
+            _buildList(context, 'media-query', '/media-query'),
+            _buildList(context, 'spacer', '/spacer'),
+            _buildList(context, 'inherited-widget', '/inherited-widget'),
+            _buildList(context, 'animated-icon', '/animated-icon'),
+            _buildList(context, 'aspect-ratio', '/aspect-ratio'),
+            _buildList(context, 'limited-box', '/limited-box'),
+            _buildList(context, 'placeholder', '/placeholder'),
           ],
         ),
       ),

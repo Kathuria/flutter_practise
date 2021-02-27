@@ -3,12 +3,7 @@ import 'package:flutter/material.dart';
 //ValueListenableBuilder
 //https://www.youtube.com/watch?v=s-ZG-jS5QHQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=31&ab_channel=Flutter
 
-class Widget30 extends StatefulWidget {
-  @override
-  _Widget30State createState() => _Widget30State();
-}
-
-class _Widget30State extends State<Widget30> {
+class Widget30 extends StatelessWidget {
   final ValueNotifier<String> value = ValueNotifier<String>('Hello!');
 
   @override
