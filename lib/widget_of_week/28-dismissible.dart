@@ -9,13 +9,13 @@ class Widget28 extends StatefulWidget {
 }
 
 class _Widget28State extends State<Widget28> {
-  final List<String> items = List<String>.generate(3, (i) => 'Item ${i + 1}');
+  final items = List<String>.generate(30, (i) => "Item ${i + 1}");
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('#Widget 28 : Dismissible'),
+        title: Text('#Widget 28 : Dismissible')
       ),
       body: ListView.builder(
         itemCount: items.length,
@@ -24,23 +24,67 @@ class _Widget28State extends State<Widget28> {
 
           return Dismissible(
             // Each Dismissible must contain a Key. Keys allow Flutter to
-            // uniquely identify widgets.
+            // uniquely identify Widgets.
             key: Key(item),
-            // Provide a function that tells the app
+            // We also need to provide a function that tells our app
             // what to do after an item has been swiped away.
             onDismissed: (direction) {
-              // Remove the item from the data source.
+              // Remove the item from our data source.
               setState(() {
                 items.removeAt(index);
               });
 
-              // Then show a snackbar.
+              // Then show a snackbar!
               Scaffold.of(context)
-                  .showSnackBar(SnackBar(content: Text('$item dismissed')));
+                  .showSnackBar(SnackBar(content: Text("$item dismissed")));
             },
-            // Show a red background as the item is swiped away.
-            background: Container(color: Colors.red),
-            child: ListTile(title: Text('$item')),
+            // Show a green background as the item is swiped from left to right
+            background: Container(
+              padding: EdgeInsets.only(left: 12),
+              alignment: Alignment.centerLeft,
+              color: Colors.green,
+              child: Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8.0),
+                    child: Text(
+                      "Positive Action",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  Icon(
+                    Icons.check,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
+            ),
+            // Show a red background as the item is swiped from right to left
+            secondaryBackground: Container(
+              padding: EdgeInsets.only(right: 12),
+              alignment: Alignment.centerRight,
+              color: Colors.red,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8.0),
+                    child: Text(
+                      "Negative Action",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  Icon(
+                    Icons.cancel,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
+            ),
+            child: ListTile(
+              leading: Icon(Icons.swap_horiz),
+              title: Text('$item'),
+            ),
           );
         },
       ),

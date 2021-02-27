@@ -8,7 +8,7 @@ class Widget16 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('#Widget 15 : ClipRRect'),
+        title: const Text('#Widget 16 : ClipRRect'),
       ),
       body: Center(
         child: Column(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practise/widget_of_week/1-safearea.dart';
 import 'package:flutter_practise/widget_of_week/2-expanded.dart';
+import 'package:flutter_practise/widget_of_week/2a-expanded-interactive.dart';
 import 'package:flutter_practise/widget_of_week/3-wrap.dart';
 import 'package:flutter_practise/widget_of_week/4-animated-container.dart';
 import 'package:flutter_practise/widget_of_week/5-opacity.dart';
@@ -8,7 +9,9 @@ import 'package:flutter_practise/widget_of_week/5a-animated-opacity.dart';
 import 'package:flutter_practise/widget_of_week/6-future-builder.dart';
 import 'package:flutter_practise/widget_of_week/7-fade-transition.dart';
 import 'package:flutter_practise/widget_of_week/8-floating-action-button.dart';
+import 'package:flutter_practise/widget_of_week/8a-fab-interactive.dart';
 import 'package:flutter_practise/widget_of_week/9-page-view.dart';
+import 'package:flutter_practise/widget_of_week/9a-page-view-reversed.dart';
 import 'package:flutter_practise/widget_of_week/10-table.dart';
 import 'package:flutter_practise/widget_of_week/11-sliver-app-bar.dart';
 import 'package:flutter_practise/widget_of_week/12-sliver-grid-count.dart';
@@ -19,6 +22,7 @@ import 'package:flutter_practise/widget_of_week/14-stream-builder-websocket.dart
 import 'package:flutter_practise/widget_of_week/14a-stream-builder-http-resp.dart';
 import 'package:flutter_practise/widget_of_week/15-inherited-model.dart';
 import 'package:flutter_practise/widget_of_week/16-clip-r-rect.dart';
+import 'package:flutter_practise/widget_of_week/16a-clip-rrect-interactive.dart';
 import 'package:flutter_practise/widget_of_week/17-hero.dart';
 import 'package:flutter_practise/widget_of_week/18-custom-paint.dart';
 import 'package:flutter_practise/widget_of_week/19-tooltip.dart';
@@ -32,11 +36,11 @@ import 'package:flutter_practise/widget_of_week/25-align.dart';
 import 'package:flutter_practise/widget_of_week/26-positioned.dart';
 import 'package:flutter_practise/widget_of_week/27-animated-builder.dart';
 import 'package:flutter_practise/widget_of_week/28-dismissible.dart';
-import 'package:flutter_practise/widget_of_week/28a-dismissible-twin-color.dart';
 import 'package:flutter_practise/widget_of_week/29-sized-box.dart';
 import 'package:flutter_practise/widget_of_week/29a-sized-box-infinity.dart';
 import 'package:flutter_practise/widget_of_week/29b-sized-box-empty.dart';
 import 'package:flutter_practise/widget_of_week/30-value-listenable-builder.dart';
+import 'package:flutter_practise/widget_of_week/31-draggable.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -48,6 +52,7 @@ class WidgetOfWeek extends StatelessWidget {
         '/': (context) => MyWidgetsPage(),
         '/safe-area': (context) => Widget1(),
         '/expanded': (context) => Widget2(),
+        '/expanded-interactive': (context) => Widget2a(),
         '/wrap': (context) => Widget3(),
         '/animated-container': (context) => Widget4(),
         '/opacity': (context) => Widget5(),
@@ -55,7 +60,9 @@ class WidgetOfWeek extends StatelessWidget {
         '/future-builder': (context) => Widget6(),
         '/fade-transition': (context) => Widget7(),
         '/floating-action-button': (context) => Widget8(),
+        '/fab-interactive': (context) => Widget8a(),
         '/page-view': (context) => Widget9(),
+        '/page-view-reversed': (context) => Widget9a(),
         '/table': (context) => Widget10(),
         '/sliver-app-bar': (context) => Widget11(),
         '/sliver-grid-count': (context) => Widget12(),
@@ -65,7 +72,8 @@ class WidgetOfWeek extends StatelessWidget {
         '/stream-builder-web-socket': (context) => Widget14(),
         '/stream-builder-http-response': (context) => Widget14a(),
         '/inherited-model': (context) => Widget15(),
-        '/clip-r-react': (context) => Widget16(),
+        '/clip-r-rect': (context) => Widget16(),
+        '/clip-r-rect-interactive': (context) => Widget16a(),
         '/hero': (context) => Widget17(),
         '/hero_detail': (context) => HeroDetailPage(),
         '/custom-paint': (context) => Widget18(),
@@ -80,11 +88,11 @@ class WidgetOfWeek extends StatelessWidget {
         '/positioned': (context) => Widget26(),
         '/animated-builder': (context) => Widget27(),
         '/dismissible': (context) => Widget28(),
-        '/dismissible-twin-colors': (context) => Widget28a(),
         '/sized-box': (context) => Widget29(),
         '/sized-box-infinity': (context) => Widget29a(),
         '/sized-box-empty': (context) => Widget29b(),
         '/value-listenable-builder': (context) => Widget30(),
+        '/draggable': (context) => Widget31(),
       },
     );
   }
@@ -102,6 +110,7 @@ class MyWidgetsPage extends StatelessWidget {
           children: <Widget>[
             _buildList(context, 'safe-area', '/safe-area'),
             _buildList(context, 'expanded', '/expanded'),
+            _buildList(context, 'expanded-interactive', '/expanded-interactive'),
             _buildList(context, 'wrap', '/wrap'),
             _buildList(context, 'animated-container', '/animated-container'),
             _buildList(context, 'opacity', '/opacity'),
@@ -109,7 +118,9 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'future-builder', '/future-builder'),
             _buildList(context, 'fade-transition', '/fade-transition'),
             _buildList(context, 'floating-action-button', '/floating-action-button'),
+            _buildList(context, 'fab-interactive', '/fab-interactive'),
             _buildList(context, 'page-view', '/page-view'),
+            _buildList(context, 'page-view-reversed', '/page-view-reversed'),
             _buildList(context, 'table', '/table'),
             _buildList(context, 'sliver-app-bar', '/sliver-app-bar'),
             _buildList(context, 'sliver-grid-count', '/sliver-grid-count'),
@@ -119,24 +130,26 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'stream-builder-web-socket', '/stream-builder-web-socket'),
             _buildList(context, 'stream-builder-http-response', '/stream-builder-http-response'),
             _buildList(context, 'inherited-model', '/inherited-model'),
-            _buildList(context, 'clip-r-react', '/clip-r-react'),
+            _buildList(context, 'clip-r-rect', '/clip-r-rect'),
+            _buildList(context, 'clip-r-rect-interactive', '/clip-r-rect-interactive'),
             _buildList(context, 'hero', '/hero'),
             _buildList(context, 'custom-paint', '/custom-paint'),
             _buildList(context, 'tooltip', '/tooltip'),
             _buildList(context, 'fitted-box', '/fitted-box'),
             _buildList(context, 'layout-builder', '/layout-builder'),
             _buildList(context, 'absorb-pointer', '/absorb-pointer'),
+            _buildList(context, 'transform', '/transform'),
             _buildList(context, 'backdrop-filter', '/backdrop-filter'),
             _buildList(context, 'backdrop-filter-positioned', '/backdrop-filter-positioned'),
             _buildList(context, 'align', '/align'),
             _buildList(context, 'positioned', '/positioned'),
             _buildList(context, 'animated-builder', '/animated-builder'),
             _buildList(context, 'dismissible', '/dismissible'),
-            _buildList(context, 'dismissible-twin-colors', '/dismissible-twin-colors'),
             _buildList(context, 'sized-box', '/sized-box'),
             _buildList(context, 'sized-box-infinity', '/sized-box-infinity'),
             _buildList(context, 'sized-box-empty', '/sized-box-empty'),
             _buildList(context, 'value-listenable-builder', '/value-listenable-builder'),
+            _buildList(context, 'draggable', '/draggable'),
           ],
         ),
       ),
