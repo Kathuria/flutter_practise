@@ -62,6 +62,14 @@ import 'package:flutter_practise/widget_of_week/49-stack.dart';
 import 'package:flutter_practise/widget_of_week/50-animated-opacity.dart';
 import 'package:flutter_practise/widget_of_week/51-fractionally-sized-box.dart';
 import 'package:flutter_practise/widget_of_week/52-list-view.dart';
+import 'package:flutter_practise/widget_of_week/53-container.dart';
+import 'package:flutter_practise/widget_of_week/54-selectable-text.dart';
+import 'package:flutter_practise/widget_of_week/55-data-table.dart';
+import 'package:flutter_practise/widget_of_week/55a-data-table-features.dart';
+import 'package:flutter_practise/widget_of_week/56-slider.dart';
+import 'package:flutter_practise/widget_of_week/57-alert-dialog.dart';
+import 'package:flutter_practise/widget_of_week/58-animated-crossfade.dart';
+import 'package:flutter_practise/widget_of_week/58a-animated-crossfade-sample.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -135,6 +143,14 @@ class WidgetOfWeek extends StatelessWidget {
         '/animated-opacity': (context) => Widget50(),
         '/fractionally-sized-box': (context) => Widget51(),
         '/list-view': (context) => Widget52(),
+        '/container': (context) => Widget53(),
+        '/selectable-text': (context) => Widget54(),
+        '/data-table': (context) => Widget55(),
+        '/data-table-features': (context) => Widget55a(),
+        '/slider': (context) => Widget56(),
+        '/alert-dialog': (context) => Widget57(),
+        '/animated-crossfade': (context) => Widget58(),
+        '/animated-crossfade-sample': (context) => Widget58a(),
       },
     );
   }
@@ -212,7 +228,15 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'stack', '/stack'),
             _buildList(context, 'animated-opacity', '/animated-opacity'),
             _buildList(context, 'fractionally-sized-box', '/fractionally-sized-box'),
-            _buildList(context, 'list-view', '/list-view'),
+            _buildList(context, 'list-view and tile', '/list-view'),
+            _buildList(context, 'container', '/container'),
+            _buildList(context, 'selectable-text', '/selectable-text'),
+            _buildList(context, 'data-table', '/data-table'),
+            _buildList(context, 'data-table-features', '/data-table-features'),
+            _buildList(context, 'slider', '/slider'),
+            _buildList(context, 'alert-dialog', '/alert-dialog'),
+            _buildList(context, 'animated-crossfade', '/animated-crossfade'),
+            _buildList(context, 'animated-crossfade-sample', '/animated-crossfade-sample'),
           ],
         ),
       ),
