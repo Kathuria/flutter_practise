@@ -81,6 +81,12 @@ import 'package:flutter_practise/widget_of_week/64-image-from-network.dart';
 import 'package:flutter_practise/widget_of_week/64a-image-from-gallery.dart';
 import 'package:flutter_practise/widget_of_week/64b-image-from-camera.dart';
 import 'package:flutter_practise/widget_of_week/65-tab-controller-and-tabbar.dart';
+import 'package:flutter_practise/widget_of_week/66-drawer.dart';
+import 'package:flutter_practise/widget_of_week/67-snackbar.dart';
+import 'package:flutter_practise/widget_of_week/68-list-wheel-scroll-view.dart';
+import 'package:flutter_practise/widget_of_week/69-shader-mask.dart';
+import 'package:flutter_practise/widget_of_week/70-notification-listener.dart';
+import 'package:flutter_practise/widget_of_week/71-clip-path.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -173,6 +179,12 @@ class WidgetOfWeek extends StatelessWidget {
         '/image-from-gallery': (context) => Widget64a(),
         '/image-from-camera': (context) => Widget64b(),
         '/tab-controller-and-tabbar': (context) => Widget65(),
+        '/drawer': (context) => Widget66(),
+        '/snack-bar': (context) => Widget67(),
+        '/list-wheel-scroll-view': (context) => Widget68(),
+        '/shader-mask': (context) => Widget69(),
+        '/notification-listener': (context) => Widget70(),
+        '/clip-path': (context) => Widget71(),
       },
     );
   }
@@ -229,7 +241,7 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'sized-box-infinity', '/sized-box-infinity'),
             _buildList(context, 'sized-box-empty', '/sized-box-empty'),
             _buildList(context, 'value-listenable-builder', '/value-listenable-builder'),
-            _buildList(context, 'draggable', '/draggable'),
+            _buildList(context, 'draggable & builder', '/draggable'),
             _buildList(context, 'animated-list', '/animated-list'),
             _buildList(context, 'flexible', '/flexible'),
             _buildList(context, 'media-query', '/media-query'),
@@ -270,6 +282,12 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'image-from-gallery', '/image-from-gallery'),
             _buildList(context, 'image-from-camera', '/image-from-camera'),
             _buildList(context, 'tab-controller-and-tabbar', '/tab-controller-and-tabbar'),
+            _buildList(context, 'drawer', '/drawer'),
+            _buildList(context, 'snack-bar', '/snack-bar'),
+            _buildList(context, 'list-wheel-scroll-view', '/list-wheel-scroll-view'),
+            _buildList(context, 'shader-mask', '/shader-mask'),
+            _buildList(context, 'notification-listener', '/notification-listener'),
+            _buildList(context, 'clip-path', '/clip-path'),
           ],
         ),
       ),

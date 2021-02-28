@@ -8,7 +8,7 @@ class Widget31 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('#Widget 31 : Draggable'),
+        title: Text('#Widget 31 : Draggable & Builder'),
       ),
       body: Builder(
         builder: (context) => Center(
