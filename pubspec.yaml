@@ -46,6 +46,8 @@ dependencies:
   transparent_image: ^1.0.0
   # Used for web-socket response in 14
   web_socket_channel: ^1.0.13
+  # Used for image from file in 64a
+  image_picker: ^0.6.3
 
 dev_dependencies:
   flutter_test:

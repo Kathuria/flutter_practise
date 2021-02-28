@@ -75,6 +75,12 @@ import 'package:flutter_practise/widget_of_week/60-color-filtered.dart';
 import 'package:flutter_practise/widget_of_week/60a-color-filtered-blend.dart';
 import 'package:flutter_practise/widget_of_week/61-toggle-buttons.dart';
 import 'package:flutter_practise/widget_of_week/61a-toggle-buttons-form.dart';
+import 'package:flutter_practise/widget_of_week/62-cupertino-action-sheet.dart';
+import 'package:flutter_practise/widget_of_week/63-tween-animation-builder.dart';
+import 'package:flutter_practise/widget_of_week/64-image-from-network.dart';
+import 'package:flutter_practise/widget_of_week/64a-image-from-gallery.dart';
+import 'package:flutter_practise/widget_of_week/64b-image-from-camera.dart';
+import 'package:flutter_practise/widget_of_week/65-tab-controller-and-tabbar.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -161,6 +167,12 @@ class WidgetOfWeek extends StatelessWidget {
         '/color-filtered-blend': (context) => Widget60a(),
         '/toggle-buttons': (context) => Widget61(),
         '/toggle-buttons-form': (context) => Widget61a(),
+        '/cupertino-action-sheet': (context) => Widget62(),
+        '/tween-animation-builder': (context) => Widget63(),
+        '/image-from-network': (context) => Widget64(),
+        '/image-from-gallery': (context) => Widget64a(),
+        '/image-from-camera': (context) => Widget64b(),
+        '/tab-controller-and-tabbar': (context) => Widget65(),
       },
     );
   }
@@ -252,6 +264,12 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'color-filtered-blend', '/color-filtered-blend'),
             _buildList(context, 'toggle-buttons', '/toggle-buttons'),
             _buildList(context, 'toggle-buttons-form', '/toggle-buttons-form'),
+            _buildList(context, 'cupertino-action-sheet', '/cupertino-action-sheet'),
+            _buildList(context, 'tween-animation-builder', '/tween-animation-builder'),
+            _buildList(context, 'image-from-network', '/image-from-network'),
+            _buildList(context, 'image-from-gallery', '/image-from-gallery'),
+            _buildList(context, 'image-from-camera', '/image-from-camera'),
+            _buildList(context, 'tab-controller-and-tabbar', '/tab-controller-and-tabbar'),
           ],
         ),
       ),
