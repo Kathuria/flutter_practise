@@ -70,6 +70,11 @@ import 'package:flutter_practise/widget_of_week/56-slider.dart';
 import 'package:flutter_practise/widget_of_week/57-alert-dialog.dart';
 import 'package:flutter_practise/widget_of_week/58-animated-crossfade.dart';
 import 'package:flutter_practise/widget_of_week/58a-animated-crossfade-sample.dart';
+import 'package:flutter_practise/widget_of_week/59-draggable-scrollable-sheet.dart';
+import 'package:flutter_practise/widget_of_week/60-color-filtered.dart';
+import 'package:flutter_practise/widget_of_week/60a-color-filtered-blend.dart';
+import 'package:flutter_practise/widget_of_week/61-toggle-buttons.dart';
+import 'package:flutter_practise/widget_of_week/61a-toggle-buttons-form.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -151,6 +156,11 @@ class WidgetOfWeek extends StatelessWidget {
         '/alert-dialog': (context) => Widget57(),
         '/animated-crossfade': (context) => Widget58(),
         '/animated-crossfade-sample': (context) => Widget58a(),
+        '/draggable-scrollable-sheet': (context) => Widget59(),
+        '/color-filtered': (context) => Widget60(),
+        '/color-filtered-blend': (context) => Widget60a(),
+        '/toggle-buttons': (context) => Widget61(),
+        '/toggle-buttons-form': (context) => Widget61a(),
       },
     );
   }
@@ -237,6 +247,11 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'alert-dialog', '/alert-dialog'),
             _buildList(context, 'animated-crossfade', '/animated-crossfade'),
             _buildList(context, 'animated-crossfade-sample', '/animated-crossfade-sample'),
+            _buildList(context, 'draggable-scrollable-sheet', '/draggable-scrollable-sheet'),
+            _buildList(context, 'color-filtered', '/color-filtered'),
+            _buildList(context, 'color-filtered-blend', '/color-filtered-blend'),
+            _buildList(context, 'toggle-buttons', '/toggle-buttons'),
+            _buildList(context, 'toggle-buttons-form', '/toggle-buttons-form'),
           ],
         ),
       ),
