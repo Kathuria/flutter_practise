@@ -8,6 +8,9 @@ class ListAdvanced extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+      ),
       home: RandomWords(),
     );
   }

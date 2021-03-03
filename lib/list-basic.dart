@@ -7,6 +7,9 @@ class ListBasic extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: ThemeData(
+        primarySwatch: Colors.yellow,
+      ),
       home: RandomWords(),
     );
   }
@@ -33,6 +36,7 @@ class _RandomWordsState extends State<RandomWords> {
         ),
       );
     }
+
     Widget _buildSuggestions() {
       return ListView.builder(
           padding: const EdgeInsets.all(16),
@@ -63,10 +67,10 @@ class _RandomWordsState extends State<RandomWords> {
               _suggestions.addAll(generateWordPairs().take(10));
             }
             return _buildRow(_suggestions[index]);
-          }
-      );
+          });
     }
-    return Scaffold (
+
+    return Scaffold(
       appBar: AppBar(
         title: Text('Startup Name Generator'),
       ),
