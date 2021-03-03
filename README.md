@@ -1,15 +1,13 @@
 # flutter_practise
 
-#30DaysOfFlutter - A new Flutter project which includes practise files from beginning.
+#30DaysOfFlutter - A Flutter project which includes practise files from scratch.
 
 ### 1. Hello World
 ### 2. Increment Counter
 ### 3. Basic Lazy Loaded List
 ### 4. Advanced List with Save Favorite
-### 5. Widget Of the Week
-Find out more here: https://www.youtube.com/watch?v=b_sQ9bMltGU&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=1
-
-### 5. Rocket_guide - A dummy featured app
+### 5. [Widget of the Week](https://goo.gle/307BX6t)
+### 6. Rocket_guide - A dummy featured app
 
 #### An easy to use index of all SpaceX rockets.
 Find out more here: http://goo.gle/30daysofflutter
@@ -18,19 +16,9 @@ Find out more here: http://goo.gle/30daysofflutter
 
 In this project, we'll make use of the unofficial SpaceX API. Find out more here: https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4
 
-## Usage
-
-Clone the repository and use `flutter run` to run the app on your device.
-
-```shell
-$ git clone https://github.com/fluttercommunity/rocket_guide
-$ cd rocket_guide
-$ flutter run
-```
-
 ## Getting Started
 
-A few resources to get you started if this is your first Flutter project:
+Resources:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)

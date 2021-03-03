@@ -87,6 +87,16 @@ import 'package:flutter_practise/widget_of_week/68-list-wheel-scroll-view.dart';
 import 'package:flutter_practise/widget_of_week/69-shader-mask.dart';
 import 'package:flutter_practise/widget_of_week/70-notification-listener.dart';
 import 'package:flutter_practise/widget_of_week/71-clip-path.dart';
+import 'package:flutter_practise/widget_of_week/72-progress-indicator.dart';
+import 'package:flutter_practise/widget_of_week/73-divider.dart';
+import 'package:flutter_practise/widget_of_week/74-ignore-pointer.dart';
+import 'package:flutter_practise/widget_of_week/75-cupertino-activity-indicator.dart';
+import 'package:flutter_practise/widget_of_week/76-clip-oval.dart';
+import 'package:flutter_practise/widget_of_week/76a-clip-oval-animated.dart';
+import 'package:flutter_practise/widget_of_week/77-animated-widget.dart';
+import 'package:flutter_practise/widget_of_week/78-padding.dart';
+import 'package:flutter_practise/widget_of_week/79-checkbox-list-tile.dart';
+import 'package:flutter_practise/widget_of_week/80-about-dialog.dart';
 
 class WidgetOfWeek extends StatelessWidget {
   @override
@@ -185,6 +195,16 @@ class WidgetOfWeek extends StatelessWidget {
         '/shader-mask': (context) => Widget69(),
         '/notification-listener': (context) => Widget70(),
         '/clip-path': (context) => Widget71(),
+        '/progress-indicator': (context) => Widget72(),
+        '/divider': (context) => Widget73(),
+        '/ignore-pointer': (context) => Widget74(),
+        '/cupertino-activity-indicator': (context) => Widget75(),
+        '/clip-oval': (context) => Widget76(),
+        '/clip-oval-animated': (context) => Widget76a(),
+        '/animated-widget': (context) => Widget77(),
+        '/padding': (context) => Widget78(),
+        '/checkbox-list-tile': (context) => Widget79(),
+        '/about-dialog': (context) => Widget80(),
       },
     );
   }
@@ -288,6 +308,16 @@ class MyWidgetsPage extends StatelessWidget {
             _buildList(context, 'shader-mask', '/shader-mask'),
             _buildList(context, 'notification-listener', '/notification-listener'),
             _buildList(context, 'clip-path', '/clip-path'),
+            _buildList(context, 'progress-indicator', '/progress-indicator'),
+            _buildList(context, 'divider', '/divider'),
+            _buildList(context, 'ignore-pointer', '/ignore-pointer'),
+            _buildList(context, 'cupertino-activity-indicator', '/cupertino-activity-indicator'),
+            _buildList(context, 'clip-oval', '/clip-oval'),
+            _buildList(context, 'clip-oval-animated', '/clip-oval-animated'),
+            _buildList(context, 'animated-widget', '/animated-widget'),
+            _buildList(context, 'padding', '/padding'),
+            _buildList(context, 'checkbox-list-tile', '/checkbox-list-tile'),
+            _buildList(context, 'about-dialog', '/about-dialog'),
           ],
         ),
       ),
