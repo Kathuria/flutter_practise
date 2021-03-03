@@ -9,7 +9,7 @@ class WidgetOfWeek extends StatelessWidget {
       title: 'Flutter Widgets',
       initialRoute: Constants.Initial_Route,
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blueGrey,
       ),
       routes: getRoutes(),
     );

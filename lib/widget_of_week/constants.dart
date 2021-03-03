@@ -7,7 +7,7 @@ class Constants {
   static const W3_Wrap = 'wrap';
   static const W4_AnimatedContainer = 'animated-container';
   static const W5_Opacity = 'opacity';
-  static const W5a_OpacityAnimated = 'animated-opacity';
+  static const W5a_OpacityAnimated = 'opacity-animated';
   static const W6_FutureBuilder = 'future-builder';
   static const W7_FadeTransition = 'fade-transition';
   static const W8_FloatingActionButton = 'floating-action-button';

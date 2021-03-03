@@ -14,7 +14,7 @@ class _Widget5aState extends State<Widget5a> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('#Widget 6 : Animated Opacity'),
+          title: const Text('#Widget 5a : Opacity Animated'),
         ),
         body: Center(
           child: Stack(

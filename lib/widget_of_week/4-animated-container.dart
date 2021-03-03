@@ -19,7 +19,7 @@ class _Widget4State extends State<Widget4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('#Widget 4 : AnimatedContainer'),
+        title: const Text('#Widget 4 : Animated Container'),
       ),
       body: Center(
         child: AnimatedContainer(

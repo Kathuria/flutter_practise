@@ -7,7 +7,7 @@ import 'package:flutter_practise/widget_of_week/2a-expanded-interactive.dart';
 import 'package:flutter_practise/widget_of_week/3-wrap.dart';
 import 'package:flutter_practise/widget_of_week/4-animated-container.dart';
 import 'package:flutter_practise/widget_of_week/5-opacity.dart';
-import 'package:flutter_practise/widget_of_week/5a-animated-opacity.dart';
+import 'package:flutter_practise/widget_of_week/5a-opacity-animated.dart';
 import 'package:flutter_practise/widget_of_week/6-future-builder.dart';
 import 'package:flutter_practise/widget_of_week/7-fade-transition.dart';
 import 'package:flutter_practise/widget_of_week/8-floating-action-button.dart';

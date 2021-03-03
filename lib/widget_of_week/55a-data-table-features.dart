@@ -31,7 +31,7 @@ class Widget55a extends StatelessWidget {
           ]),
           DataRow(cells: [
             DataCell(Text('Avi'), showEditIcon: true),
-            DataCell(Text('2018')),
+            DataCell(Text('2021')),
           ]),
         ],
       ),

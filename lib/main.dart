@@ -46,7 +46,7 @@ class MyPractiseApp extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           _buildList(context, 'Hello To Flutter', '/hello'),
-          _buildList(context, 'Inc. Counter', '/counter'),
+          _buildList(context, 'Increment Counter', '/counter'),
           _buildList(context, 'Lazy list', '/list-basic'),
           _buildList(context, 'Lazy Advanced List', '/list-advanced'),
           _buildList(context, 'Widgets Of the Week', '/widgetOfWeek'),
