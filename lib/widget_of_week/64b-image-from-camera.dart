@@ -14,10 +14,9 @@ class _Widget64bState extends State<Widget64b> {
   File imageFile;
 
   Future<void> _getImageFile(ImageSource source) async {
-    final file = await ImagePicker.pickImage(source: source);
-
+    PickedFile selectedFile = await ImagePicker().getImage(source: source);
     setState(() {
-      imageFile = file;
+      imageFile = File(selectedFile.path);
     });
   }
 

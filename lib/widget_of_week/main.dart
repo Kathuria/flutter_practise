@@ -88,7 +88,7 @@ class _MyWidgetsPageState extends State<MyWidgetsPage> {
           itemCount: Constants.WIDGETS.length,
           itemBuilder: (BuildContext context, int index) {
             return new Card(
-              color: Colors.cyan[50],
+              //color: Colors.cyan[50],
               elevation: 5.0,
               child: new Container(
                 margin: EdgeInsets.all(5.0),
@@ -120,7 +120,7 @@ class _MyWidgetsPageState extends State<MyWidgetsPage> {
           itemCount: _searchListItems.length,
           itemBuilder: (BuildContext context, int index) {
             return new Card(
-              color: Colors.cyan[100],
+              color: Colors.cyan[50],
               elevation: 5.0,
               child: new Container(
                 margin: EdgeInsets.all(5.0),

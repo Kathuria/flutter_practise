@@ -46,27 +46,27 @@ class MyPractiseApp extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 30.0),
+            padding: const EdgeInsets.only(top: 70.0),
             child: _buildList(context, 'Hello to Flutter', '/hello'),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30.0),
+            padding: const EdgeInsets.only(top: 50.0),
             child: _buildList(context, 'Increment Counter', '/counter'),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30.0),
+            padding: const EdgeInsets.only(top: 50.0),
             child: _buildList(context, 'Lazy list', '/list-basic'),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30.0),
+            padding: const EdgeInsets.only(top: 50.0),
             child: _buildList(context, 'Lazy Advanced List', '/list-advanced'),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30.0),
+            padding: const EdgeInsets.only(top: 50.0),
             child: _buildList(context, 'Widgets Of the Week', '/widgetOfWeek'),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30.0, bottom: 30.0),
+            padding: const EdgeInsets.only(top: 50.0, bottom: 70.0),
             child: _buildList(context, 'SpaceX Rockets', '/rocket'),
           ),
         ],
