@@ -35,11 +35,11 @@ class Widget57 extends StatelessWidget {
                         actions: <Widget>[
                           CupertinoDialogAction(
                             child: Text("No"),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                           CupertinoDialogAction(
                             child: Text("Yes"),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                         ],
                       ),
@@ -65,7 +65,7 @@ class Widget57 extends StatelessWidget {
                         actions: <Widget>[
                           CupertinoDialogAction(
                             child: Text("reject", style: TextStyle(color: Colors.red),),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                         ],
                       ),
@@ -91,7 +91,7 @@ class Widget57 extends StatelessWidget {
                         actions: <Widget>[
                           CupertinoDialogAction(
                             child: Text("Lets Start", style: TextStyle(color: Colors.green),),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                         ],
                       ),
@@ -121,7 +121,7 @@ class Widget57 extends StatelessWidget {
                               style: TextStyle(
                                   color: Theme.of(context).primaryColor),
                             ),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                           TextButton(
                             child: Text(
@@ -129,7 +129,7 @@ class Widget57 extends StatelessWidget {
                               style: TextStyle(
                                   color: Theme.of(context).primaryColor),
                             ),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                         ],
                       ),
@@ -159,7 +159,7 @@ class Widget57 extends StatelessWidget {
                               style: TextStyle(
                                   color: Theme.of(context).primaryColor),
                             ),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                           TextButton(
                             child: Text(
@@ -167,7 +167,7 @@ class Widget57 extends StatelessWidget {
                               style: TextStyle(
                                   color: Theme.of(context).primaryColor),
                             ),
-                            onPressed: () => Navigator.pop(context),
+                            onPressed: () => Navigator.of(context, rootNavigator: true).pop(),
                           ),
                         ],
                       ),
