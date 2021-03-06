@@ -7,8 +7,9 @@
 ### 3. Basic Lazy Loaded List
 ### 4. Advanced List with Save Favorite
 ### 5. [Widget of the Week](https://goo.gle/307BX6t)
-<img src='./images/flutter_practise.gif' height='700px' width='500px'/>
+<img src='./images/flutter_practise.gif' height='550px' width='350px'/>
 <br/>
+
 ### 6. Rocket_guide - A dummy featured app
 
 #### An easy to use index of all SpaceX rockets.
