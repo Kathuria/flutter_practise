@@ -45,25 +45,52 @@ class MyPractiseApp extends StatelessWidget {
     return SafeArea(
       child: ListView(
         children: <Widget>[
-          _buildList(context, 'Hello To Flutter', '/hello'),
-          _buildList(context, 'Increment Counter', '/counter'),
-          _buildList(context, 'Lazy list', '/list-basic'),
-          _buildList(context, 'Lazy Advanced List', '/list-advanced'),
-          _buildList(context, 'Widgets Of the Week', '/widgetOfWeek'),
-          _buildList(context, 'SpaceX Rockets', '/rocket'),
+          Padding(
+            padding: const EdgeInsets.only(top: 30.0),
+            child: _buildList(context, 'Hello to Flutter', '/hello'),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 30.0),
+            child: _buildList(context, 'Increment Counter', '/counter'),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 30.0),
+            child: _buildList(context, 'Lazy list', '/list-basic'),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 30.0),
+            child: _buildList(context, 'Lazy Advanced List', '/list-advanced'),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 30.0),
+            child: _buildList(context, 'Widgets Of the Week', '/widgetOfWeek'),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 30.0, bottom: 30.0),
+            child: _buildList(context, 'SpaceX Rockets', '/rocket'),
+          ),
         ],
       ),
     );
   }
 
   Widget _buildList(BuildContext context, String title, String routeName) {
-    return Card(
-      child: ListTile(
-        title: Text(title),
-        onTap: () {
-          Navigator.pushNamed(context, routeName);
-        },
-        trailing: Icon(Icons.next_plan),
+    return Center(
+      child: SizedBox(
+        width: 250,
+        height: 50,
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, routeName);
+          },
+          child: Text(
+            title,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+            ),
+          ),
+        ),
       ),
     );
   }
