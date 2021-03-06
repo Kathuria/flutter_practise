@@ -24,7 +24,7 @@ class Widget59 extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Image.asset('images/flutter_engage.png'),
-                    for (var i = 0; i < 10; i++)
+                    for (var i = 0; i < 20; i++)
                       Text('Engage',
                           style: Theme.of(context).textTheme.headline4),
                   ],
