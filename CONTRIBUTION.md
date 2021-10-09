@@ -9,7 +9,7 @@ In this guide you will get an overview of the contribution workflow from opening
 
 ## Guide to this repo
 
-Widgets of a week is a intiative by Flutter Community that keeps on adding new widget every week. Currently in this repository we have 80 widgets available. Our target will is to bring all widgets that is demonstrated on [Youtube Channel](https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG) in this repo as a practise guide.
+Widgets of a week is a intiative by Flutter Community that keeps on adding new widget every week. Currently in this repository we have 80 widgets available. Our target is to build all widgets that is demonstrated on [Youtube Channel](https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG) in this repo as a practise guide.
 
 
 ## Structure guide
@@ -26,7 +26,6 @@ Widgets of a week is a intiative by Flutter Community that keeps on adding new w
 - [ ] [gridView](https://www.youtube.com/watch?v=bLOtZDTm4H8&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=89)
 
 - [ ] [switchListTitle](https://www.youtube.com/watch?v=0igIjvtEWNU&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=90)
-
 
 - [ ] [Location](https://www.youtube.com/watch?v=65qbtJMltVk&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=91)
 
@@ -50,9 +49,7 @@ Widgets of a week is a intiative by Flutter Community that keeps on adding new w
 
 - [ ] [flutterLogo](https://www.youtube.com/watch?v=aAmP-WcI6dg&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=101)
 
-
 - [ ] [animatedTextKit](https://www.youtube.com/watch?v=foQTKCQqVWk&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=102)
-
 
 - [ ] [mouseRegion](https://www.youtube.com/watch?v=1oF3pI5umck&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=103)
 
@@ -72,21 +69,27 @@ Widgets of a week is a intiative by Flutter Community that keeps on adding new w
 ### Issues
 
 #### Create a new issue
-If you spot a problem with the docs, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/github/docs/issues/new/choose). 
+If you spot a problem with the app, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/github/docs/issues/new/choose). 
 
 #### Solve an issue
 
 Scan through our [existing issues](https://github.com/github/docs/issues) to find one that interests you. You can narrow down the search using `labels` as filters. See [Labels](/contributing/how-to-use-labels.md) for more information.
 
 ### Make Changes
+- Start by fork this repo and creating new branch with same name as widget e.g. feature-interactive-vierwer
+- Install Android Studio and do related installations for an android dart setup
+- Once Done, Try running this app in local or check released apk available in build for sampele overview
+- Add new widget directory and make required changes
+- Test it locally
+- Commit final changes in your branch
+- Then raise merge request of this branch in our repo.
+- Once reviewed and approved - You are done - you will be part of this repository and reflected in contributors list.
 
 #### Make changes in the UI
 
 Click **Make a contribution** at the bottom of any docs page to make small changes such as a typo, sentence fix, or a broken link. This takes you to the `.md` file where you can make your changes and [create a pull request](#pull-request) for a review. 
 
  <img src="./images/contribution_cta.png" width="300" height="150" /> 
-
-#### Make changes locally
 
 ### Commit your update
 
@@ -100,6 +103,5 @@ Once your changes are ready, don't forget to [self-review](/contributing/self-re
 
 Congratulations :tada::tada: The GitHub team thanks you :sparkles:. 
 
-Once your PR is merged, your contributions will be publicly visible on the [GitHubs docs](https://docs.github.com/en). 
 
 Now that you are part of the GitHub docs community, see how else you can [contribute to the docs](/contributing/types-of-contributions.md).
