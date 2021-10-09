@@ -76,7 +76,7 @@ If you spot a problem with the app, [search if an issue already exists](https://
 Scan through our [existing issues](https://github.com/github/docs/issues) to find one that interests you. You can narrow down the search using `labels` as filters. See [Labels](/contributing/how-to-use-labels.md) for more information.
 
 ### Make Changes
-- Start by fork this repo and creating new branch with same name as widget e.g. feature-interactive-vierwer
+- Start by forking this repo and creating new branch with same name as new widget_of_week e.g. feature-interactive-vierwer
 - Install Android Studio and do related installations for an android dart setup
 - Once Done, Try running this app in local or check released apk available in build for sampele overview
 - Add new widget directory and make required changes
@@ -95,13 +95,6 @@ Click **Make a contribution** at the bottom of any docs page to make small chang
 
 Commit the changes once you are happy with them. See [Atom's contributing guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) to know how to use emoji for commit messages.
 
-Once your changes are ready, don't forget to [self-review](/contributing/self-review.md) to speed up the review process:zap:.
-
-### Pull Request
-
 ### Your PR is merged!
 
-Congratulations :tada::tada: The GitHub team thanks you :sparkles:. 
-
-
-Now that you are part of the GitHub docs community, see how else you can [contribute to the docs](/contributing/types-of-contributions.md).
+Congratulations :tada::tada: Thank You :sparkles:. 
