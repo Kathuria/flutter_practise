@@ -1,33 +1,77 @@
 # Welcome to Flutter Practise contributing guide <!-- omit in toc -->
 
-Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on [docs.github.com](https://docs.github.com/en) :sparkles:. 
+Thank you for planning to invest time in contributing to our project! 
 
 Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-Use the table of contents icon <img src="./assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of the this document to get to a specific section of this guide quickly.
 
-## New contributor guide
+## Guide to this repo
 
-To get an overview of the project, read the [README](README.md). Here are some resources to help you get started with open source contributions:
-
-- [Finding ways to contribute to open source on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
-- [Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
-- [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
-- [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
+Widgets of a week is a intiative by Flutter Community that keeps on adding new widget every week. Currently in this repository we have 80 widgets available. Our target will is to bring all widgets that is demonstrated on [Youtube Channel](https://www.youtube.com/playlist?list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG) in this repo as a practise guide.
 
 
-## Getting started
+## Structure guide
+* Use ```/images``` directory to keep images for any new widget
+* For coding, check ```/lib/widget_of_week``` directory
+    - ``main`` file is entry of these widgets - in case required update accordingly
+    - ``constants`` file will be used to add display name of output list and route for click on list ***(Must Update)***
+    - ``routes`` file will be used to add routes for maintining click behaviour ***(Must Update)***
 
-To navigate our codebase with confidence, see [the introduction to working in the docs repository](/contributing/working-in-docs-repository.md) :confetti_ball:. For more information on how we write our markdown files, see [the GitHub Markdown reference](contributing/content-markup-reference.md).
 
-Check to see what [types of contributions](/contributing/types-of-contributions.md) we accept before making changes. Some of them don't even require writing a single line of code :sparkles:.
+## TODO's
+- [ ] [interactiveViewer](https://www.youtube.com/watch?v=zrn7V3bMJvg&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=88)
+
+- [ ] [gridView](https://www.youtube.com/watch?v=bLOtZDTm4H8&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=89)
+
+- [ ] [switchListTitle](https://www.youtube.com/watch?v=0igIjvtEWNU&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=90)
+
+
+- [ ] [Location](https://www.youtube.com/watch?v=65qbtJMltVk&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=91)
+
+- [ ] [deviceInfo](https://www.youtube.com/watch?v=8T3g6HU5Odo&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=92)
+
+- [ ] [imageFiltered](https://www.youtube.com/watch?v=7Lftorq4i2o&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=93)
+
+- [ ] [PhysicalModel](https://www.youtube.com/watch?v=XgUOSS30OQk&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=94)
+
+- [ ] [Animations](https://www.youtube.com/watch?v=HHzAJdlEj1c&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=95)
+
+- [ ] [flutterSlidable](https://www.youtube.com/watch?v=QFcFEpFmNJ8&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=96)
+
+- [ ] [rotatedBox](https://www.youtube.com/watch?v=BFE6_UglLfQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=97)
+
+- [ ] [expansionPanel](https://www.youtube.com/watch?v=2aJZzRMziJc&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=98)
+
+- [ ] [scrollbar](https://www.youtube.com/watch?v=DbkIQSvwnZc&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=99)
+
+- [ ] [connectivity](https://www.youtube.com/watch?v=P2vaBZDSqzg&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=100)
+
+- [ ] [flutterLogo](https://www.youtube.com/watch?v=aAmP-WcI6dg&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=101)
+
+
+- [ ] [animatedTextKit](https://www.youtube.com/watch?v=foQTKCQqVWk&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=102)
+
+
+- [ ] [mouseRegion](https://www.youtube.com/watch?v=1oF3pI5umck&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=103)
+
+- [ ] [sensorsPlus](https://www.youtube.com/watch?v=Fq5zNPJufD0&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=104)
+
+- [ ] [collection](https://www.youtube.com/watch?v=Ymw9xfRucK0&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=105)
+
+- [ ] [heroMode](https://www.youtube.com/watch?v=AaIASk2u1C0&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=106)
+
+- [ ] [refreshIndicator](https://www.youtube.com/watch?v=ORApMlzwMdM&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=108)
+
+- [ ] [flow](https://www.youtube.com/watch?v=NG6pvXpnIso&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=109)
+
+***To start, pick these TODO items and raise merge request for the same.***
+
 
 ### Issues
 
 #### Create a new issue
-
 If you spot a problem with the docs, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/github/docs/issues/new/choose). 
 
 #### Solve an issue
@@ -40,7 +84,7 @@ Scan through our [existing issues](https://github.com/github/docs/issues) to fin
 
 Click **Make a contribution** at the bottom of any docs page to make small changes such as a typo, sentence fix, or a broken link. This takes you to the `.md` file where you can make your changes and [create a pull request](#pull-request) for a review. 
 
- <img src="./assets/images/contribution_cta.png" width="300" height="150" /> 
+ <img src="./images/contribution_cta.png" width="300" height="150" /> 
 
 #### Make changes locally
 
@@ -57,7 +101,7 @@ Click **Make a contribution** at the bottom of any docs page to make small chang
 - GitHub Codespaces:
   - [Fork, edit, and preview](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace) using [GitHub Codespaces](https://github.com/features/codespaces) without having to install and run the project locally.
 
-3. Install or update to **Android Studio**.
+3. Install or update to **Node.js v16**. For more information, see [the development guide](contributing/development.md).
 
 4. Create a working branch and start with your changes!
 
@@ -85,14 +129,3 @@ Congratulations :tada::tada: The GitHub team thanks you :sparkles:.
 Once your PR is merged, your contributions will be publicly visible on the [GitHubs docs](https://docs.github.com/en). 
 
 Now that you are part of the GitHub docs community, see how else you can [contribute to the docs](/contributing/types-of-contributions.md).
-
-## Windows
-
-This site can be developed on Windows, however a few potential gotchas need to be kept in mind:
-
-1. Regular Expressions: Windows uses `\r\n` for line endings, while Unix based systems use `\n`. Therefore when working on Regular Expressions, use `\r?\n` instead of `\n` in order to support both environments. The Node.js [`os.EOL`](https://nodejs.org/api/os.html#os_os_eol) property can be used to get an OS-specific end-of-line marker.
-2. Paths: Windows systems use `\` for the path separator, which would be returned by `path.join` and others. You could use `path.posix`, `path.posix.join` etc and the [slash](https://ghub.io/slash) module, if you need forward slashes - like for constructing URLs - or ensure your code works with either.
-3. Bash: Not every Windows developer has a terminal that fully supports Bash, so it's generally preferred to write [scripts](/script) in JavaScript instead of Bash.
-4. Filename too long error: There is a 260 character limit for a filename when Git is compiled with `msys`. While the suggestions below are not guaranteed to work and could possibly cause other issues, a few workarounds include:
-    - Update Git configuration: `git config --system core.longpaths true`
-    - Consider using a different Git client on Windows
